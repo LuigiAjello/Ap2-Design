@@ -1,0 +1,237 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção Brasileira - Copa do Mundo</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .login-container {
+            margin-top: 100px;
+            display: block;
+        }
+        .menu-container {
+            margin-top: 50px;
+            display: none;
+        }
+        .player-card img {
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s;
+            width: 150px;
+            height: 150px;
+        }
+        .player-card img:hover {
+            transform: scale(1.1);
+        }
+        .player-card {
+            margin: 20px;
+            text-align: center;
+        }
+        .player-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tela de Login -->
+    <div class="container login-container" id="login">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h3>Login</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="username">Usuário</label>
+                                <input type="text" class="form-control" id="username" placeholder="Digite seu usuário">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Senha</label>
+                                <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+                            </div>
+                            <button type="button" class="btn btn-primary btn-block" onclick="goToMenu()">Entrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Principal (Jogadores) -->
+    <div class="container menu-container" id="menu">
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1">Seleção Brasileira - Copa do Mundo</span>
+        </nav>
+        <div class="player-grid">
+            <!-- Imagem Geral da Seleção -->
+            <div class="player-card">
+                <a href="#selecao"><img src="imagem_selecao.png" class="img-fluid" alt="Seleção"></a>
+                <h5>Seleção Completa</h5>
+            </div>
+
+            <!-- Imagens dos Jogadores (Placeholder) -->
+            <div class="player-card">
+                <a href="#jogador1"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 1"></a>
+                <h5>Jogador 1</h5>
+            </div>
+            <div class="player-card">
+                <a href="#jogador2"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 2"></a>
+                <h5>Jogador 2</h5>
+            </div>
+            <div class="player-card">
+                <a href="#jogador3"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 3"></a>
+                <h5>Jogador 3</h5>
+            </div>
+            <!-- Jogador 4 -->
+            <div class="player-card">
+                <a href="#jogador4"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 4"></a>
+                <h5>Jogador 4</h5>
+            </div>
+            <!-- Jogador 5 -->
+            <div class="player-card">
+                <a href="#jogador5"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 5"></a>
+                <h5>Jogador 5</h5>
+            </div>
+            <!-- Jogador 6 -->
+            <div class="player-card">
+                <a href="#jogador6"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 6"></a>
+                <h5>Jogador 6</h5>
+            </div>
+            <!-- Jogador 7 -->
+            <div class="player-card">
+                <a href="#jogador7"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 7"></a>
+                <h5>Jogador 7</h5>
+            </div>
+            <!-- Jogador 8 -->
+            <div class="player-card">
+                <a href="#jogador8"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 8"></a>
+                <h5>Jogador 8</h5>
+            </div>
+            <!-- Jogador 9 -->
+            <div class="player-card">
+                <a href="#jogador9"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 9"></a>
+                <h5>Jogador 9</h5>
+            </div>
+            <!-- Jogador 10 -->
+            <div class="player-card">
+                <a href="#jogador10"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 10"></a>
+                <h5>Jogador 10</h5>
+            </div>
+            <!-- Jogador 11 -->
+            <div class="player-card">
+                <a href="#jogador11"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 11"></a>
+                <h5>Jogador 11</h5>
+            </div>
+            <!-- Jogador 12 -->
+            <div class="player-card">
+                <a href="#jogador12"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 12"></a>
+                <h5>Jogador 12</h5>
+            </div>
+            <!-- Jogador 13 -->
+            <div class="player-card">
+                <a href="#jogador13"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 13"></a>
+                <h5>Jogador 13</h5>
+            </div>
+            <!-- Jogador 14 -->
+            <div class="player-card">
+                <a href="#jogador14"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 14"></a>
+                <h5>Jogador 14</h5>
+            </div>
+            <!-- Jogador 15 -->
+            <div class="player-card">
+                <a href="#jogador15"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 15"></a>
+                <h5>Jogador 15</h5>
+            </div>
+            <!-- Jogador 16 -->
+            <div class="player-card">
+                <a href="#jogador16"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 16"></a>
+                <h5>Jogador 16</h5>
+            </div>
+            <!-- Jogador 17 -->
+            <div class="player-card">
+                <a href="#jogador17"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 17"></a>
+                <h5>Jogador 17</h5>
+            </div>
+            <!-- Jogador 18 -->
+            <div class="player-card">
+                <a href="#jogador18"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 18"></a>
+                <h5>Jogador 18</h5>
+            </div>
+            <!-- Jogador 19 -->
+            <div class="player-card">
+                <a href="#jogador19"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 19"></a>
+                <h5>Jogador 19</h5>
+            </div>
+            <!-- Jogador 20 -->
+            <div class="player-card">
+                <a href="#jogador20"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 20"></a>
+                <h5>Jogador 20</h5>
+            </div>
+            <!-- Jogador 21 -->
+            <div class="player-card">
+                <a href="#jogador21"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 21"></a>
+                <h5>Jogador 21</h5>
+            </div>
+            <!-- Jogador 22 -->
+            <div class="player-card">
+                <a href="#jogador22"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 22"></a>
+                <h5>Jogador 22</h5>
+            </div>
+            <!-- Jogador 23 -->
+            <div class="player-card">
+                <a href="#jogador23"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 23"></a>
+                <h5>Jogador 23</h5>
+            </div>
+            <!-- Jogador 24 -->
+            <div class="player-card">
+                <a href="#jogador24"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 24"></a>
+                <h5>Jogador 24</h5>
+            </div>
+            <!-- Jogador 25 -->
+            <div class="player-card">
+                <a href="#jogador25"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 25"></a>
+                <h5>Jogador 25</h5>
+            </div>
+            <div class="player-card">
+                <a href="#jogador26"><img src="imagem_jogador.png" class="img-fluid" alt="Jogador 26"></a>
+                <h5>Jogador 26</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script>
+        function goToMenu() {
+            // Verifica se os campos de usuário e senha foram preenchidos
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username && password) {
+                // Esconde a tela de login e mostra o menu principal
+                document.querySelector("#login").style.display = 'none';
+                document.querySelector("#menu").style.display = 'block';
+            } else {
+                alert("Por favor, preencha todos os campos!");
+            }
+        }
+    </script>
+</body>
+</html>
